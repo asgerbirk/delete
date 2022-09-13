@@ -13,12 +13,13 @@ public class Controller {
     private final Repo repo;
 
     public Controller(Repo repo) {
+
         this.repo = repo;
     }
 
     @GetMapping("/")
     public ResponseEntity<Helli> greeting(){
-        Helli helli = new Helli("hej meddig");
+        Helli helli = new Helli("hej meddig meerwaldt");
         repo.save(helli);
         return new ResponseEntity<>(helli, HttpStatus.OK);
     }
