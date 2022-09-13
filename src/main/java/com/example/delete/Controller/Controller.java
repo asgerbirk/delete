@@ -18,7 +18,7 @@ public class Controller {
 
     @GetMapping("/")
     public ResponseEntity<Helli> greeting(){
-        Helli helli = new Helli("smash");
+        Helli helli = new Helli("hej meerwaldt");
         repo.save(helli);
         return new ResponseEntity<>(helli, HttpStatus.OK);
     }
