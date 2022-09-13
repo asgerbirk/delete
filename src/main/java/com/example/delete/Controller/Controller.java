@@ -19,7 +19,7 @@ public class Controller {
 
     @GetMapping("/")
     public ResponseEntity<Helli> greeting(){
-        Helli helli = new Helli("hej meddig meerwaldt");
+        Helli helli = new Helli("hej meddig meerwaldt eerrrri");
         repo.save(helli);
         return new ResponseEntity<>(helli, HttpStatus.OK);
     }
